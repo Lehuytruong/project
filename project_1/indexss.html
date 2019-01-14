@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="header">
+    <h1>Giữ nguyên Header khi cuộn trang theo phong cách Facebook bằng jQuery</h1>
+</div>
+ 
+<span>Some dumb text to add scrolling in page <br/><br/><br/><br/><br/></span>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+<p>Some more dumb text to add scrolling in page <br/><br/><br/><br/><br/></p>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+ 
+    var div = $('#header');
+    var start = $(div).offset().top;
+ 
+    $.event.add(window, "scroll", function() {
+        var span = $(window).scrollTop();
+        $(div).css('position',((span)>start) ? 'fixed' : 'static');
+        $(div).css('top',((span)>start) ? '0px' : '');
+    });
+ 
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+*{
+  background: #fff;
+  font-family:"Coiny";
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+#header-top{
+  height: auto;
+  line-height: 2.2;
+  background:#ebebeb ;
+}
+.contact-header-top-left{
+  margin-left: 160px;
+  background:none ;
+}
+.contact-header-top-left  span{
+  background: none;
+  font-size: 16px;
+  text-shadow: 0 0 1px black;
+}
+.contact-header-top-left span i{
+  color: black;
+  font-size:16px;
+}
+.contact-header-top-right{
+  text-decoration: none;
+  float: right;
+  right: 160px;
+  background: none;
+  line-height: 3;
+}
+.contact-header-top-right >span a{
+  text-decoration:none;
+  background: none;
+  color: black;
+  font-size: 16px;
+  text-shadow: 0 0 1px black;
+}
+.contact-header-top-right >span{
+  background: none;
+}
+.contact-header-top-right > .boder{
+    border-right: 1px solid black;
+}
+#header{
+  height: auto;
+  overflow: hidden;
+  margin: 10px 0px 50px 150px;
+}
+#header .logo{
+  float: left;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 2;
+}
+.box-search{
+  margin-top: 50px;
+  float:right;
+  right: 550px;
+}
+.input-search{
+  width: 600px;
+  height: 30px;
+  border: 2px solid #4565A8;
+}
+.search-button{
+  width: 55px;
+  height: 32px;
+  cursor: pointer;
+  border: 2px solid #4565A8;
+  outline: none;
+  z-index: 2;
+  margin-left: -61px;
+  background: #4565A8;
+  top: 12px;
+
+}
+.search-button i{
+  margin-left: 10px;
+  font-size: 18px;
+  background: #4565A8;
+  color: #fff;
+  bottom: 8px;
+}
+.login b{
+  color: black;
+  right: 100px;
+  }
+
+#nav{
+  width: 100%;
+  height: 58px;
+  background-color: #0066CC;
+
+}
+
+#nav ul{
+  line-height: 57px;
+  margin-left: 140px;
+  float: left;
+  background: none;
+  cursor: pointer;
+
+}
+#nav ul li a,b,i{
+  margin:0;
+  text-decoration: none;
+  color: #F5F5F5;
+  margin:15px;
+  font-size: 16px;
+  background: none;
+  transition: 0.5s;
+}
+
+.nav-text li{
+  display: inline-block;
+  list-style: none;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  background: none;
+  transition: 0.5s;
+}
+ul #mega-menu{
+  width: 300px;
+  height: 58px;
+  background: #DD0000;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.menu{
+  width: 300px;
+  border: 1px solid black;
+  margin-top: 5px;
+  right: 140px;
+  display:block;
+}
+ .menu >li{
+  display: list-item;
+  transition: 0.5s;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+  .menu li a{
+  color: black !important;
+  font-size: 20px !important;
+}
+.menu1{
+  display: inline;
+}
+.menu1 a span{
+  background: none;
+}
+.menu1 >.title li {
+  z-index: 112 !important;
+  margin-left: 162px;
+  width: 600px;
+  top: -58px;
+  display: none;
+  background: #fff;
+}
+.title li span{
+  background: none;
+}
+.menu1 .title{
+  position: absolute;
+  text-align: left;
+  background: #fff;
+
+}
+.menu1> .title2 li{
+  top: -112px;
+}
+
+    /* phần css của slide ảnh */
+.slide{
+  margin-top:20%;
+}
+ .swiper-container {
+      width: 900px;
+      height: 400px;
+      float: right;
+      right: 150px;
+      top: 5px;
+
+    }
+ .button-next, .button-prev{
+      background: none;
+      display: none;
+    }
+    .button-next{
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    z-index: 10;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+}
+    .button-next i, .button-prev i{
+      font-size: 40px;
+       transition: 0.5s;
+
+    }
+      .button-prev{
+      transition: 1s;
+      position: absolute;
+      top: 45%;
+      left: 15px;
+      z-index: 10;
+      cursor: pointer;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 2px;
+      opacity: 0;
+      }
+    .swiper-pagination{
+      background: none;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+.swiper-wrapper img{
+  width: 950px;
+  height: 400px;
+
+}
+
+.nav-text li:hover{
+  background-color: #002200;
+
+}
+
+
+.swiper-container:hover > .button-prev{
+  opacity: 0;
+  display:block;
+  animation-name: button-prev;
+  animation-duration: 200ms;
+  animation-fill-mode:forwards;
+  animation-delay :200ms;
+  animation-timing-function: ease-in-out;
+}
+  @keyframes button-prev{
+  100%{
+    opacity: 1;
+    left: 10px;
+  }
+}
+.swiper-container:hover > .button-next{
+  opacity: 0;
+  display:block;
+  animation-name: button-next;
+  animation-duration: 200ms;
+  animation-fill-mode:forwards;
+  animation-delay :200ms;
+  animation-timing-function: ease-in-out;
+}
+  @keyframes button-next{
+  100%{
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+.swiper-container:hover > .button-next{
+  display:block;
+}
+.button-prev i:hover{
+  color: #0066CC;
+}
+.button-next i:hover{
+  color: #0066CC;
+}
+.menu li:hover{
+  background: #ebebeb;
+  color: black;
+}
+.menu1:hover  ul.title li{
+  display: block;
+}
+
+.fixed{
+  position: fixed;
+  z-index: 10000;
+  top:0px;
+   animation-name: nav;
+  -webkit-animation-name: nav;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+ @keyframes nav{
+  0%{
+    transform: rotateY(-15deg);
+  }
+  100%{
+    transform: rotateY(0deg);
+
+  };
+};
+.none{
+  display: none;
+}
+#container{
+  height: 500px;
+  background: #ebebeb;
+  top: 450px;
+}
